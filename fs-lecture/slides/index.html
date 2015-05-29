@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=1024, user-scalable=no">
+
+		<title> Free Software </title>
+
+		<!-- Required stylesheet -->
+		<link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+		<!-- Extension CSS files go here. Remove or add as needed. -->
+		<link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+		<link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+		<link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+		<link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+		<link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+		<!-- Style theme. More available in /themes/style/ or create your own. -->
+		<link rel="stylesheet" media="screen" href="./themes/style/swiss.css">
+
+		<!-- Transition theme. More available in /themes/transition/ or create your own. -->
+		<link rel="stylesheet" media="screen" href="themes/transition/vertical-slide.css">
+
+		<!-- Basic black and white print styles -->
+		<link rel="stylesheet" media="print" href="core/print.css">
+
+		<!-- Required Modernizr file -->
+		<script src="modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="deck-container">
+
+			<!-- Begin slides. Just make elements with a class of slide. -->
+
+			<section  class="slide">
+				<br>
+				<img src="../img/logo.png" />
+				<p align=center style="font-family:Liberation Serif, serif">
+				Koło Naukowe Wolnego Oprogramowania "Slimak"
+				</p>
+				<h2 align="center" valign="middle" >
+					<font size=40 style="font-family:Liberation Serif, serif">
+						<b>	Cezary Drak &lt;cd@openmailbox.org&gt; <br>
+							Jakub Olczyk &lt;jakub.olczyk@openmailbox.org&gt;
+						</b>
+					</font>
+				</h2>
+			</section>
+
+			<section  class="slide">
+				<h2> Agenda </h2>
+				<ul>
+					<li>
+						<h3> Wolne Oprogramowanie </h3>
+						<ul>
+							<li>
+								<h4> Trochę historii </h4>
+							</li>
+							<li>
+								<h4> GNU/Linux </h4>
+							</li>
+							<li>
+								<h4> Free Software vs Open Source </h4>
+							</li>
+							<li>
+								<h4> Dlaczego GNU/Linux? </h4>
+							</li>
+							<li>
+								<h4> Jak zdobyć GNU/Linuksa? </h4>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h3> Środowisko Programisty  </h3>
+						<ul>
+							<li>
+								<h4> GNU - naturalne środowisko programisty </h4>
+							</li>
+							<li>
+								<h4> Dlaczego GNU/Linux </h4>
+							</li>
+							<li>
+								<h4> Kod źródłowy </h4>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
+			<!-- Part 1 - Wolne Oprogramowanie -->
+			<section  class="slide">
+				<h1> Wolne oprogramowanie </h1>
+			</section>
+
+			<section  class="slide">
+				<h2> Wolne Oprogramowanie -<br> co to takiego? </h2>
+				<ul>
+					<li  class="slide">
+						<h3> Cztery Wolności </h3>
+					</li>
+					<ol start="0">
+						<li  class="slide">
+							<h4> Każdy ma prawo używać jej jak chce, w dowolnym celu <h4>
+						</li>
+						<li  class="slide">
+							<h4> Każdy ma prawo analizować jak działa oraz to działanie modyfikować </h4>
+						</li>
+						<li  class="slide">
+							<h4> Każdy ma prawo rozpowszechniać jej kopie </h4>
+						</li>
+						<li  class="slide">
+							<h4> Każdy ma prawo dzielić się swoimi modyfikacjami </h4>
+						</li>
+					</ol>
+				</ul>
+				<h3 class="slide">Otwarty kod źródłowy</h3>
+			</section>
+
+			<section  class="slide">
+				<h2> Richard Stallman - <br>how saga begins </h2>
+				<img src="../img/rms.jpeg" align="middle">
+				<ul>
+					<li  class="slide">
+						<h3> Historia pewnej drukarki </h3>
+						<img align="right" src="../img/printer.jpeg">
+					</li>
+					<li  class="slide">
+						<h3> Projekt GNU </h3>
+					</li>
+					<li  class="slide">
+						<h3> GNU Emacs </h3>
+					</li>
+					<li  class="slide">
+						<h3> GPL = General Public License </h3>
+					</li>
+				</ul>
+			</section>
+
+			<section class="slide">
+				<h2> Jądro Linux - <br>ostatni brakujący element </h2>
+				<ul>
+					<li class="slide">
+						<h3> 1990 → prezentacja w Finlandii </h3>
+					</li>
+					<li class="slide">
+						<h3> Linus Torvalds </h3>
+						<img src="../img/lin800x600.jpg" align="right">
+					</li>
+					<li class="slide">
+						<h3> Jądro Linux </h3>
+					</li>
+					<li class="slide">
+						<h3> GNU/Linux → <strong>wolny</strong> system operacyjny </h3>
+					</li>
+				</ul>
+			</section>
+
+			<section class="slide">
+				<h2> Dystrybucje GNU/Linux </h2>
+				<ul>
+					<li class="slide">
+						<h3> Pakiety - skompilowane paczki</h3>	
+						<ul>
+							<li class="slide">
+								<p> programy/biblioteki <p>
+							</li>
+							<li class="slide">
+								<p> zależności </p>
+							</li>
+							<li class="slide">
+								<p> menadżery pakietów </p>
+							</li>
+							<li class="slide">
+								<p> współdzielone biblioteki → oszczędzanie miejsca na dysku i RAMu </p>
+							</li>
+						</ul>
+					</li>
+					<li class="slide">
+						<h3> Przykłady: </h3>
+						<p> Slackware, Debian, Red Hat/Fedora, Ubuntu/Mint, Gentoo </p>
+					</li>
+				</ul>
+			</section>
+
+			<section class="slide">
+				<h2> GNU/Linux w biznesie </h2>
+				<ul>
+					<li class="slide">
+						<h3> Produktem jest usługa - <br>nie licencjonowanie binarek </h3>
+					</li>
+					<li class="slide">
+						<h3> Red Hat </h3>
+					</li>
+					<li class="slide">
+						<h3> SUSE </h3>
+					</li>
+					<li class="slide">
+						<h3> VPS </h3>
+					</li>
+				</ul>
+			</section>
+
+			<section class="slide">
+			<h2> Free software vs Open source</h2>
+			<img width="400px" align="right" src="../img/fsf-logo.jpg">
+			<img width="300px" align="right" src="../img/osi-logo.png">
+			<br>
+			<br>
+				<ul>
+					<li class="slide">
+						<h3> 1998 - Open Source Initiative </h3>
+					</li>
+					<li class="slide">
+						<h3> Problem nazewnictwa </h3>
+					</li>
+					<li class="slide">
+						<h3> Chwyt marketingowy </h3>
+					</li>
+					<li class="slide">
+						<h3> Open Source ←→ otwarty kod dla większej wydajności </h3>
+					</li>
+					<li class="slide">
+						<h3> Free Software ←→ tworzenie: </h3>
+						<ul>
+							<li class="slide">
+								<p> wolnego oprogramowania </p>
+							</li>
+							<li class="slide">
+								<p> wolnych społeczności </p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
+			<section class="slide">
+				<h2> Free Software vs Open Source </h2>
+				<em>
+				Open Source software and Free Software describe the same
+				category of software, but they say very different things about
+				it. Open source is a technical movement; the free software
+				movement is a social and political movement. People who talk
+				about “open source” focus on how that makes it possible to
+				improve the technology faster. Implicitly, what they’re saying
+				is that improving the technology is the most important thing.
+				Well, I don’t think so.<br> <b style="font-size:2em"> For me, creating a community in which
+				people have freedom is the most important thing.</b>
+				</em>
+				<br>
+				<cite>~Richard M. Stallman</cite>
+				
+			</section>
+						 
+			<section class="slide">
+				<h2> Dlaczego warto korzystać z GNU/Linuksa? </h2>
+				<ul>
+					<li class="slide">
+						<h3> Wolność </h3>
+					</li>
+					<li class="slide">
+						<h3> Kontrola </h3>
+					</li>
+					<li class="slide">
+						<h3> Konfigurowalność </h3>
+					</li>
+					<li class="slide">
+						<h3> Modularność </h3>
+					</li>
+				</ul>
+			</section>
+
+			<section  class="slide">
+				<h2> Dlaczego warto korzystać z GNU/Linux? </h2>
+				<ul>
+					<li class="slide">
+						<h4> Stabilność pracy </h4>
+					</li>
+					<li class="slide">
+						<h4> Wykorzystywany w krytycznych sytuacjach </h4>
+						<ul>
+							<li class="slide">
+								<p> CERN </p>
+							</li>
+							<li class="slide">
+								<p> NASA </p>
+							</li>
+							<li class="slide">
+								<p> Serwery webowe </p>
+							</li>
+							<li class="slide">
+								<p> Superkomputery </p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
+			<section class="slide">
+				<h2> GNU/Linux - Skąd go wziąć? </h2>
+				<ul>
+					<li class="slide">
+						<h4> Wybór dystrybucji </h4>
+						<p> Dystrybucja, którą używa znajomy.<br><small> Jak nie ma się przyjaciół to Debian.</small> </p>
+					</li>
+					<li class="slide">
+						<h4> Pobranie obrazu z sieci </h4>
+					</li>
+					<li class="slide">
+						<h4> Installation Party </h4>
+					</li>
+					<li class="slide">
+						<h4> LiveCD: Debian, Fedora, Knoppix, Tails, GRML </h4>
+					</li>
+					<li class="slide">
+						<h4> Spotkania Slimaka: wtorki 16.00 sala 1146 </h4>
+					</li>
+				</ul>
+			</section>
+
+			<section class="slide">
+				<h1> Q&A </h1>
+			</section>
+
+			<section  class="slide">
+				<br>
+				<img src="../img/logo.png" />
+				<p align=center style="font-family:Liberation Serif, serif">
+				Koło Naukowe Wolnego Oprogramowania "Slimak"
+				</p>
+				<h2 align="center" valign="middle" >
+					<font size=40 style="font-family:Liberation Serif, serif">
+						<b>	Cezary Drak &lt;cd@openmailbox.org&gt; <br>
+							Jakub Olczyk &lt;jakub.olczyk@openmailbox.org&gt;
+						</b>
+					</font>
+				</h2>
+				<h6 align="center">
+					Materiały z wykładu można znaleźć pod adresem :
+					<p>github.com/slimakuj/free-software</p>
+				</h6>
+			</section>
+
+			<!-- Part 2 - Środowisko programisty -->
+			<section class="slide">
+				<h1> Środowisko programisty </h1>
+			</section>
+
+			<section  class="slide">
+				<h2> GNU - naturalne środowisko programisty </h2>
+				<h3  class="slide"> GNU = GNU's Not Unix </h3>
+				<ul>
+					<li  class="slide">
+						<h4> Napisane w C </h4>
+					</li>
+					<li  class="slide">
+						<h4> Shell </h4>
+					</li>
+					<li  class="slide">
+						<h4> POSIX </h4>
+					</li>
+				</ul>
+			</section>
+
+			<section  class="slide">
+				<h2> GNU - naturalne środowisko programisty </h2>
+				<ul>
+					<li  class="slide">
+						<h3> IDE </h3>
+						<ul>
+							<li  class="slide">
+								<h4> Edytor tekstu: emacs, vim... </h4>
+							</li>
+							<li  class="slide">
+								<h4> Kompilator: gcc, clang... </h4>
+							</li>
+							<li  class="slide">
+								<h4> Debugger: dbg... </h4>
+							</li>
+						</ul>
+					</li>
+					<li  class="slide">
+						<h3> Kontrola wersji: svn, git... </h3>
+					</li>
+					<li  class="slide">
+						<h3> Testowanie: shell, języki skryptowe... </h3>
+					</li>
+				</ul>
+			</section>
+
+			<section  class="slide">
+				<h2> Dlaczego GNU/Linux? </h2>
+				<em> Z oprogramowaniem jest albo tak, że użytkownicy kontrolują
+					program <br>albo to program kontroluje użytkowników.</em>
+				<br>
+				<cite>~ Richard M. Stallman</cite>
+				<br>
+				<br>
+				<ul>
+					<li class="slide"> 
+						<h4> Elastyczność </h4>
+						<p> Dostosowujesz środowisko do siebie, a nie siebie do środowiska </p>
+				   	</li>
+					<li class="slide">
+						<h4> Modularność </h4>
+						<p> Możesz wybrać zestaw narzędzi, który Ci najlepiej odpowiada </p>
+				   	</li>
+					<li class="slide">
+						<h4> Stabilność </h4>
+					</li>
+				</ul>
+				<!-- <h4 class="slide"> Profit??? → Czas i wygoda pracy </h4> -->
+			</section>
+
+			<section  class="slide">
+				<h2> Dlaczego GNU/Linux? </h2>
+				<em> Z oprogramowaniem jest albo tak, że użytkownicy kontrolują
+					program <br>albo to program kontroluje użytkowników.</em>
+				<br>
+				<cite>~ Richard M. Stallman</cite>
+				<br>
+				<br>
+				<ul>
+					<li class="slide"> 
+						<h4> Niezmienny standard </h4>
+						<p> POSIX vs WinAPI </p>
+				   	</li>
+					<li class="slide">
+						<h4> Ogromne repozytoria </h4>
+						<p> Dobre, wolne i zazwyczaj darmowe oprogramowanie zebrane w jednym miejscu </p>
+				   	</li>
+					<li class="slide">
+						<h3> Wolność </h3>
+					</li>
+				</ul>
+				<h4 class="slide"> Profit??? → Czas i wygoda pracy </h4>
+			</section>
+
+			<section class="slide">
+				<h2> Kod źródłowy </h2>
+				<ul>
+					<li class="slide">
+						<h3> Kompilacja ze źródeł </h3>
+						<p> Dogłębne zrozumienie procesu kompilacji, linkowania etc. programu </p>
+					</li>
+					<li class="slide">
+						<h3> Nauka poprzez czytanie kodu </h3>
+					</li>
+					<li class="slide">
+						<h3> Udział w rozwoju oprogramowania </h3>
+					</li>
+				</ul>
+			</section>
+
+			<section  class="slide">
+				<h1> Q&A </h1> 
+			</section>
+
+			<section  class="slide">
+				<br>
+				<img src="../img/logo.png" />
+				<p align=center style="font-family:Liberation Serif, serif">
+				Koło Naukowe Wolnego Oprogramowania "Slimak"
+				</p>
+				<h2 align="center" valign="middle" >
+					<font size=40 style="font-family:Liberation Serif, serif">
+						<b>	Cezary Drak &lt;cd@openmailbox.org&gt; <br>
+							Jakub Olczyk &lt;jakub.olczyk@openmailbox.org&gt;
+						</b>
+					</font>
+				</h2>
+				<h6 align="center">
+					Materiały z wykładu można znaleźć pod adresem :
+					<p>
+					<strong>github.com/slimakuj/free-software</strong>
+					</p>
+				</h6>
+			</section>
+
+			<section  class="slide">
+				<h1> Dziękujemy </h1>
+			</section>
+
+			<!-- End slides. -->
+
+			<!-- Begin extension snippets. Add or remove as needed. -->
+
+			<!-- deck.goto snippet -->
+
+			<form action="." method="get" class="goto-form">
+				<label for="goto-slide">Go to slide:</label>
+				<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+				<datalist id="goto-datalist"></datalist>
+				<input type="submit" value="Go">
+			</form>
+
+			<!-- End extension snippets. -->
+		</div>
+
+		<!-- Required JS files. -->
+		<script src="jquery.min.js"></script>
+		<script src="core/deck.core.js"></script>
+
+		<!-- Extension JS files. Add or remove as needed. -->
+		<script src="extensions/menu/deck.menu.js"></script>
+		<script src="extensions/goto/deck.goto.js"></script>
+		<script src="extensions/status/deck.status.js"></script>
+		<script src="extensions/navigation/deck.navigation.js"></script>
+		<script src="extensions/scale/deck.scale.js"></script>
+
+		<!-- Initialize the deck. You can put this in an external file if desired. -->
+		<script>
+$(function() {
+	$.deck('.slide');
+});
+		</script> 
+
+	</body>
+</html>

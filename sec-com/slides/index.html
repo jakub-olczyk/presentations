@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=1280, user-scalable=no">
+
+		<title>Secure Email</title>
+
+		<!-- Required stylesheet -->
+		<link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+		<!-- Extension CSS files go here. Remove or add as needed. -->
+		<link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+		<link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+		<link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+		<link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+		<link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+		<!-- Style theme. More available in /themes/style/ or create your own. -->
+		<link rel="stylesheet" media="screen" href="themes/style/neon.css">
+
+		<!-- Transition theme. More available in /themes/transition/ or create your own. -->
+		<link rel="stylesheet" media="screen" href="themes/transition/vertical-slide.css">
+
+		<!-- Basic black and white print styles -->
+		<link rel="stylesheet" media="print" href="core/print.css">
+
+		<!-- Required Modernizr file -->
+		<script src="modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="deck-container">
+
+			<!-- Begin slides. Just make elements with a class of slide. -->
+			<section class="slide">
+			<h1>Secure Email</h1>
+			</section>
+
+			<section class="slide">
+				<h2></h2>
+				<h3>Jakub Olczyk</h3>
+				<div>
+				Students' Association of Free Software<br><br>
+				<em>&lt;jakub.olczyk@openmailbox.org&gt;</em>
+				</div>
+			</section>
+
+			<section class="slide">
+				<h2>Agenda</h2>
+				<ul>
+					<li><big>Why should I worry about security?</big></li>
+					<li><big>How can I make my correspodence secure?</big></li>
+					<li><big>Q&amp;A</big></li>
+				</ul>
+			</section>
+
+			<section class="slide">
+				<h2>Security - why should I care?</h2>
+				<iframe width="1024" height="768" src="https://www.youtube.com/embed/F7pYHN9iC9I" frameborder="0" allowfullscreen></iframe>
+			</section>
+
+			<section class="slide">
+				<h2>How about email - is it secure?</h2>
+				<ul>
+					<li class="slide">
+					Traditional mail uses <strong>envelopes</strong> <img align="right" width="13%" src="https://raw.githubusercontent.com/SlimakUJ/dzien-wydzialu-2015/master/secure-communication/img/mail-envelope.png"><br>
+					Electronic mail is more like <strong>postcard</strong>
+					</li>
+					<li class="slide">
+					SMTP = <strong>Simple</strong> Mail Transfer Protocol<br>
+					every message is transferred in <em>plain text</em>	
+					</li>
+					<li class="slide">
+					Everyone can read it when it is transferred	
+					<br>
+					<img src="https://raw.githubusercontent.com/SlimakUJ/dzien-wydzialu-2015/master/secure-communication/img/email-unsafe.png">
+					</li>
+				</ul>
+			</section>
+
+			<section class="slide">
+				<h2>How can I make sure my email is secure?</h2>	
+				<ul>
+					<li class="slide">
+					Open Standard = anyone can implement a client<br></span>
+					<strong>OpenPGP</strong>
+					</li>
+
+					<li class="slide">
+					Cryptography = <strong>"electronic envelope"</strong>
+					<ul>
+						<li class="slide">combination of both <strong>symmetric and asymmetric cypher</strong></li>
+						<li class="slide"><strong>RSA</strong> <div class="slide"> → factorization of big primes</div>
+						</li>
+					</ul>
+					</li>
+
+
+					<li class="slide">
+					Free software (<em>"free as in <strong>freedom</strong>, not free as in beer"</em>)
+					<ol>
+						<li class="slide">
+						Run
+						<img align="right" src="../img/run.png">
+						</li>
+
+						<li class="slide">
+						Study / Modify
+						<img align="right" src="../img/study.png">
+						</li>
+
+						<li class="slide">
+						Share
+						<img align="right" src="../img/share.png">
+						</li>
+
+						<li class="slide">
+						Improve and share improvements
+						<img align="right" src="../img/modify.png">
+						</li>
+					</ol>
+					<div class="slide">→ implementation is constantly checked</div>
+				</li>
+			</ul>
+			</section>
+
+			<section class="slide">
+			<h2>What is this "(a)symmetric cipher"?</h2>
+				<div class="slide">Symmetric</div>
+				<ul>
+					<li class="slide">same key for ENCRYPTION and DECRYPTION</li>	
+					<li class="slide">usually quite fast</li>	
+				</ul>
+				<div class="slide">Asymmetric</div>
+				<ul>
+					<li class="slide"> uses 2 keys to encrypt and decrypt MESSAGE
+					 
+					</li>
+					<li class="slide"> one key is known to everybody = <strong>public key</strong><br>
+						<div class="slide" style="font-family:serif"><big>used to ENCRYPT MESSAGE to somebody</big></div>
+						<img align="right" src="../img/public-key.png">
+					</li>
+					<li class="slide"> the other is kept hidden = <strong>private key</strong><br>
+					<div class="slide" style="font-family:serif"><big>used to DECRYPT MESSAGE to you</big></div>
+					<img align="right" src="../img/private-key.png">
+					</li>
+				</ul>
+			</section>
+
+			<section class="slide">
+				<h2>How is ciphertext created?</h2>
+				<div style="background-color:darkgrey"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/PGP_diagram.svg/737px-PGP_diagram.svg.png"></div>
+			</section>
+
+			<section class="slide">
+			<h2>The Solution</h2>
+			<div class="slide">
+			<img align="center" src="../img/gnupg.png">
+			</div>
+			<ul>
+				<li class="slide"><big>implements <strong>OpenPGP</strong></big></li>
+				<li class="slide"><big>is <strong>free software</strong></big></li>
+				<li class="slide"><big>also is <strong>free of charge</strong></big></li>
+			</ul>
+			</section>
+
+			<section class="slide">
+			<h1>Questions?</h1>
+			</section>
+
+			<section class="slide">
+			<h1>Thank you</h1>
+			</section>
+			<!-- End slides. -->
+			<!-- Begin extension snippets. Add or remove as needed. -->
+
+			<!-- deck.goto snippet -->
+
+			<form action="." method="get" class="goto-form">
+				<label for="goto-slide">Go to slide:</label>
+				<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+				<datalist id="goto-datalist"></datalist>
+				<input type="submit" value="Go">
+			</form>
+
+			<!-- End extension snippets. -->
+		</div>
+
+		<!-- Required JS files. -->
+		<script src="jquery.min.js"></script>
+		<script src="core/deck.core.js"></script>
+
+		<!-- Extension JS files. Add or remove as needed. -->
+		<script src="extensions/menu/deck.menu.js"></script>
+		<script src="extensions/goto/deck.goto.js"></script>
+		<script src="extensions/status/deck.status.js"></script>
+		<script src="extensions/navigation/deck.navigation.js"></script>
+		<script src="extensions/scale/deck.scale.js"></script>
+
+		<!-- Initialize the deck. You can put this in an external file if desired. -->
+		<script>
+$(function() {
+	$.deck('.slide');
+});
+		</script> 
+
+	</body>
+</html>
